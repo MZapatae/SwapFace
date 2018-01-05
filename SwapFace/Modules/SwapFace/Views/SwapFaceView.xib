@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwapFaceVC" customModule="SwapFace" customModuleProvider="target">
             <connections>
-                <outlet property="arSceneView" destination="1An-zf-aiq" id="M2J-oC-Xmj"/>
+                <outlet property="arSceneView" destination="1An-zf-aiq" id="VuM-5P-VYZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="DqT-95-AVk"/>
             </connections>
         </placeholder>

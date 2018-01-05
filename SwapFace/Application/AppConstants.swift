@@ -9,5 +9,5 @@
 import Foundation
 
 enum AppConfig {
-  static let showAxis = true
+  static let showCoordinateOrigin = true
 }

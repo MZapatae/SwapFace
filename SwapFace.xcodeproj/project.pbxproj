@@ -24,6 +24,7 @@
 		8EE5BAAC1FFFC3960021D392 /* VirtualContentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */; };
 		8EE5BAB1200012C10021D392 /* VirtualFaceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */; };
 		8EE5BAB3200013F10021D392 /* FaceMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAB2200013F10021D392 /* FaceMesh.swift */; };
+		8EE5BAB620001F480021D392 /* VirtualContentUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAB520001F480021D392 /* VirtualContentUpdater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContentTypes.swift; sourceTree = "<group>"; };
 		8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualFaceContent.swift; sourceTree = "<group>"; };
 		8EE5BAB2200013F10021D392 /* FaceMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMesh.swift; sourceTree = "<group>"; };
+		8EE5BAB520001F480021D392 /* VirtualContentUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContentUpdater.swift; sourceTree = "<group>"; };
 		BBCDC5D21ED952468EFABB73 /* Pods-SwapFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,10 +164,19 @@
 		8EE5BAAF200012450021D392 /* ARKit Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8EE5BAB420001F030021D392 /* VirtualContent */,
+				8EE5BAB520001F480021D392 /* VirtualContentUpdater.swift */,
+			);
+			path = "ARKit Helpers";
+			sourceTree = "<group>";
+		};
+		8EE5BAB420001F030021D392 /* VirtualContent */ = {
+			isa = PBXGroup;
+			children = (
 				8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */,
 				8EE5BAB2200013F10021D392 /* FaceMesh.swift */,
 			);
-			path = "ARKit Helpers";
+			path = VirtualContent;
 			sourceTree = "<group>";
 		};
 		B05C5DD801F9FCAACEC6F97B /* Frameworks */ = {
@@ -321,6 +332,7 @@
 				8E140E7B1FFC2B2700C6F99E /* SwapFaceContract.swift in Sources */,
 				8EE5BAB1200012C10021D392 /* VirtualFaceContent.swift in Sources */,
 				8E140E811FFC2CED00C6F99E /* SwapFacePresenter.swift in Sources */,
+				8EE5BAB620001F480021D392 /* VirtualContentUpdater.swift in Sources */,
 				8E140E641FFC23F700C6F99E /* AppDelegate.swift in Sources */,
 				8E140E831FFC2D4900C6F99E /* SwapFaceRouter.swift in Sources */,
 				8E140E851FFC2D8F00C6F99E /* SwapFaceVC.swift in Sources */,
