@@ -19,50 +19,51 @@ class SwapFaceVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    arSceneView.session.delegate = self
-    arSceneView.automaticallyUpdatesLighting = true
-    createFaceGeometry()
+    presenter.viewDidLoad()
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    UIApplication.shared.isIdleTimerDisabled = true
-    resetTracking()
+    presenter.viewDidAppear(animated: animated)
   }
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    session.pause()
-  }
-  
-  func resetTracking() {
-    guard ARFaceTrackingConfiguration.isSupported else { return }
-    let configuration = ARFaceTrackingConfiguration()
-    configuration.isLightEstimationEnabled = true
-    session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    presenter.viewWillDisappear(animated: animated)
   }
   
   func createFaceGeometry() {
     let device = arSceneView.device!
     let faceGeometry = ARSCNFaceGeometry(device: device)!
   }
-  
- 
 }
 
 extension SwapFaceVC: SwapFaceView {
+  func prepareArSession() {
+    arSceneView.session.delegate = self
+    arSceneView.automaticallyUpdatesLighting = true
+    createFaceGeometry()
+  }
   
+  func resetArTracking() {
+    guard ARFaceTrackingConfiguration.isSupported else { return }
+    let configuration = ARFaceTrackingConfiguration()
+    configuration.isLightEstimationEnabled = true
+    session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+  }
+  
+  func pauseArSession() {
+    session.pause()
+  }
 }
 
 extension SwapFaceVC: ARSessionDelegate {
   func session(_ session: ARSession, didFailWithError error: Error) {
-    print("AR Session Error: \(error.localizedDescription)")
+    presenter.didArSessionFail(error: error)
   }
   
   func sessionInterruptionEnded(_ session: ARSession) {
-    Async.main {
-      self.resetTracking()
-    }
+    presenter.didSessionInterruptionEnded()
   }
 }
 

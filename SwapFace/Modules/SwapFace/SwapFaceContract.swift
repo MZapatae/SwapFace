@@ -9,27 +9,34 @@
 import UIKit
 
 protocol SwapFaceView: class {
-    var presenter: SwapFacePresentation! { get set }
+  var presenter: SwapFacePresentation! { get set }
+  
+  func prepareArSession()
+  func pauseArSession()
+  func resetArTracking()
 }
 
 protocol SwapFacePresentation: BasePresenter {
-    weak var view: SwapFaceView? { get set }
-    var interactor: SwapFaceUsesCases! { get set }
-    var router: SwapFaceWireframe! { get set }
+  weak var view: SwapFaceView? { get set }
+  var interactor: SwapFaceUsesCases! { get set }
+  var router: SwapFaceWireframe! { get set }
+  
+  func didArSessionFail(error: Error)
+  func didSessionInterruptionEnded()
 }
 
 protocol SwapFaceUsesCases: class {
-    weak var output: SwapFaceInteractorOutput! { get set }
-    
+  weak var output: SwapFaceInteractorOutput! { get set }
+  
 }
 
 protocol SwapFaceInteractorOutput: class {
-    
+  
 }
 
 protocol SwapFaceWireframe: class {
-    weak var viewController: UIViewController? { get set }
-    
-    static func assembleModule() -> UIViewController
+  weak var viewController: UIViewController? { get set }
+  
+  static func assembleModule() -> UIViewController
 }
 

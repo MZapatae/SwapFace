@@ -9,7 +9,7 @@
 import Foundation
 
 class SwapFaceInteractor: SwapFaceUsesCases {
-    weak var output: SwapFaceInteractorOutput!
-    
+  weak var output: SwapFaceInteractorOutput!
+  
 }
 
