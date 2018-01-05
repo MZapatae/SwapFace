@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8814A257D354F3116DC42AA6 /* Pods_SwapFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3E08104CE9046272F110FC /* Pods_SwapFace.framework */; };
 		8E140E641FFC23F700C6F99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140E631FFC23F700C6F99E /* AppDelegate.swift */; };
 		8E140E6B1FFC23F700C6F99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E140E6A1FFC23F700C6F99E /* Assets.xcassets */; };
 		8E140E6E1FFC23F700C6F99E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E140E6C1FFC23F700C6F99E /* LaunchScreen.storyboard */; };
@@ -18,9 +19,14 @@
 		8E140E851FFC2D8F00C6F99E /* SwapFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140E841FFC2D8F00C6F99E /* SwapFaceVC.swift */; };
 		8E140E871FFC2DC200C6F99E /* SwapFaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E140E861FFC2DC200C6F99E /* SwapFaceView.xib */; };
 		8E140E8B1FFC2E2400C6F99E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140E8A1FFC2E2400C6F99E /* BasePresenter.swift */; };
+		8E638B891FFD6C1D00E59D46 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E638B881FFD6C1D00E59D46 /* Models.scnassets */; };
+		8EE5BAA91FFFC1470021D392 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAA81FFFC1470021D392 /* AppConstants.swift */; };
+		8EE5BAAC1FFFC3960021D392 /* VirtualContentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3E08104CE9046272F110FC /* Pods_SwapFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451B5514321AC72195786637 /* Pods-SwapFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace.release.xcconfig"; sourceTree = "<group>"; };
 		8E140E601FFC23F700C6F99E /* SwapFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E140E631FFC23F700C6F99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E140E6A1FFC23F700C6F99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +40,10 @@
 		8E140E841FFC2D8F00C6F99E /* SwapFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapFaceVC.swift; sourceTree = "<group>"; };
 		8E140E861FFC2DC200C6F99E /* SwapFaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapFaceView.xib; sourceTree = "<group>"; };
 		8E140E8A1FFC2E2400C6F99E /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		8E638B881FFD6C1D00E59D46 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		8EE5BAA81FFFC1470021D392 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContentTypes.swift; sourceTree = "<group>"; };
+		BBCDC5D21ED952468EFABB73 /* Pods-SwapFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8814A257D354F3116DC42AA6 /* Pods_SwapFace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,8 @@
 			children = (
 				8E140E621FFC23F700C6F99E /* SwapFace */,
 				8E140E611FFC23F700C6F99E /* Products */,
+				DAE602C99951D54BD38271D5 /* Pods */,
+				B05C5DD801F9FCAACEC6F97B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +81,7 @@
 			children = (
 				8E140E751FFC283000C6F99E /* Application */,
 				8E140E781FFC2ACC00C6F99E /* Modules */,
+				8EE5BAAA1FFFC37B0021D392 /* Enums */,
 				8E140E771FFC290500C6F99E /* Resources */,
 			);
 			path = SwapFace;
@@ -78,6 +92,7 @@
 			children = (
 				8E140E631FFC23F700C6F99E /* AppDelegate.swift */,
 				8E140E7C1FFC2BC100C6F99E /* AppRouter.swift */,
+				8EE5BAA81FFFC1470021D392 /* AppConstants.swift */,
 				8E140E6F1FFC23F700C6F99E /* Info.plist */,
 			);
 			path = Application;
@@ -86,6 +101,7 @@
 		8E140E771FFC290500C6F99E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8E638B881FFD6C1D00E59D46 /* Models.scnassets */,
 				8E140E6A1FFC23F700C6F99E /* Assets.xcassets */,
 				8E140E6C1FFC23F700C6F99E /* LaunchScreen.storyboard */,
 			);
@@ -130,6 +146,31 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8EE5BAAA1FFFC37B0021D392 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B05C5DD801F9FCAACEC6F97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F3E08104CE9046272F110FC /* Pods_SwapFace.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE602C99951D54BD38271D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBCDC5D21ED952468EFABB73 /* Pods-SwapFace.debug.xcconfig */,
+				451B5514321AC72195786637 /* Pods-SwapFace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E140E721FFC23F700C6F99E /* Build configuration list for PBXNativeTarget "SwapFace" */;
 			buildPhases = (
+				E2CCF04D546319C1AD15C238 /* [CP] Check Pods Manifest.lock */,
 				8E140E5C1FFC23F700C6F99E /* Sources */,
 				8E140E5D1FFC23F700C6F99E /* Frameworks */,
 				8E140E5E1FFC23F700C6F99E /* Resources */,
+				DF7885D9A8D6D892DA70FF40 /* [CP] Embed Pods Frameworks */,
+				6347756B3E781B55521A42AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,11 +235,66 @@
 			files = (
 				8E140E6E1FFC23F700C6F99E /* LaunchScreen.storyboard in Resources */,
 				8E140E871FFC2DC200C6F99E /* SwapFaceView.xib in Resources */,
+				8E638B891FFD6C1D00E59D46 /* Models.scnassets in Resources */,
 				8E140E6B1FFC23F700C6F99E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6347756B3E781B55521A42AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7885D9A8D6D892DA70FF40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2CCF04D546319C1AD15C238 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwapFace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E140E5C1FFC23F700C6F99E /* Sources */ = {
@@ -203,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E140E7F1FFC2CB100C6F99E /* SwapFaceInteractor.swift in Sources */,
+				8EE5BAA91FFFC1470021D392 /* AppConstants.swift in Sources */,
 				8E140E8B1FFC2E2400C6F99E /* BasePresenter.swift in Sources */,
 				8E140E7B1FFC2B2700C6F99E /* SwapFaceContract.swift in Sources */,
 				8E140E811FFC2CED00C6F99E /* SwapFacePresenter.swift in Sources */,
@@ -210,6 +310,7 @@
 				8E140E831FFC2D4900C6F99E /* SwapFaceRouter.swift in Sources */,
 				8E140E851FFC2D8F00C6F99E /* SwapFaceVC.swift in Sources */,
 				8E140E7D1FFC2BC100C6F99E /* AppRouter.swift in Sources */,
+				8EE5BAAC1FFFC3960021D392 /* VirtualContentTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +437,7 @@
 		};
 		8E140E731FFC23F700C6F99E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCDC5D21ED952468EFABB73 /* Pods-SwapFace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -352,6 +454,7 @@
 		};
 		8E140E741FFC23F700C6F99E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451B5514321AC72195786637 /* Pods-SwapFace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
