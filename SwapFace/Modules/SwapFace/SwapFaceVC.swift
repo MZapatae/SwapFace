@@ -10,7 +10,6 @@ import UIKit
 import ARKit
 import Async
 
-
 class SwapFaceVC: UIViewController {
   @IBOutlet weak var arSceneView: ARSCNView!
   
@@ -35,6 +34,7 @@ class SwapFaceVC: UIViewController {
   func createFaceGeometry() {
     let device = arSceneView.device!
     let faceGeometry = ARSCNFaceGeometry(device: device)!
+    
   }
 }
 

@@ -22,6 +22,8 @@
 		8E638B891FFD6C1D00E59D46 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E638B881FFD6C1D00E59D46 /* Models.scnassets */; };
 		8EE5BAA91FFFC1470021D392 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAA81FFFC1470021D392 /* AppConstants.swift */; };
 		8EE5BAAC1FFFC3960021D392 /* VirtualContentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */; };
+		8EE5BAB1200012C10021D392 /* VirtualFaceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */; };
+		8EE5BAB3200013F10021D392 /* FaceMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAB2200013F10021D392 /* FaceMesh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		8E638B881FFD6C1D00E59D46 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 		8EE5BAA81FFFC1470021D392 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContentTypes.swift; sourceTree = "<group>"; };
+		8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualFaceContent.swift; sourceTree = "<group>"; };
+		8EE5BAB2200013F10021D392 /* FaceMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMesh.swift; sourceTree = "<group>"; };
 		BBCDC5D21ED952468EFABB73 /* Pods-SwapFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapFace/Pods-SwapFace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,7 @@
 				8E140E781FFC2ACC00C6F99E /* Modules */,
 				8EE5BAAA1FFFC37B0021D392 /* Enums */,
 				8E140E771FFC290500C6F99E /* Resources */,
+				8EE5BAAF200012450021D392 /* ARKit Helpers */,
 			);
 			path = SwapFace;
 			sourceTree = "<group>";
@@ -152,6 +157,15 @@
 				8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		8EE5BAAF200012450021D392 /* ARKit Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */,
+				8EE5BAB2200013F10021D392 /* FaceMesh.swift */,
+			);
+			path = "ARKit Helpers";
 			sourceTree = "<group>";
 		};
 		B05C5DD801F9FCAACEC6F97B /* Frameworks */ = {
@@ -305,10 +319,12 @@
 				8EE5BAA91FFFC1470021D392 /* AppConstants.swift in Sources */,
 				8E140E8B1FFC2E2400C6F99E /* BasePresenter.swift in Sources */,
 				8E140E7B1FFC2B2700C6F99E /* SwapFaceContract.swift in Sources */,
+				8EE5BAB1200012C10021D392 /* VirtualFaceContent.swift in Sources */,
 				8E140E811FFC2CED00C6F99E /* SwapFacePresenter.swift in Sources */,
 				8E140E641FFC23F700C6F99E /* AppDelegate.swift in Sources */,
 				8E140E831FFC2D4900C6F99E /* SwapFaceRouter.swift in Sources */,
 				8E140E851FFC2D8F00C6F99E /* SwapFaceVC.swift in Sources */,
+				8EE5BAB3200013F10021D392 /* FaceMesh.swift in Sources */,
 				8E140E7D1FFC2BC100C6F99E /* AppRouter.swift in Sources */,
 				8EE5BAAC1FFFC3960021D392 /* VirtualContentTypes.swift in Sources */,
 			);
