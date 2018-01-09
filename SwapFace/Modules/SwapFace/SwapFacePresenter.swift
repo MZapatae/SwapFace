@@ -10,6 +10,7 @@ import Foundation
 import Async
 
 class SwapFacePresenter: SwapFacePresentation {
+  
   weak var view: SwapFaceView?
   var interactor: SwapFaceUsesCases!
   var router: SwapFaceWireframe!
@@ -23,6 +24,10 @@ class SwapFacePresenter: SwapFacePresentation {
     Async.main {
       self.view?.resetArTracking()
     }
+  }
+  
+  func arSessionReady() {
+    view?.startArSession()
   }
   
   func didSessionInterruptionEnded() {

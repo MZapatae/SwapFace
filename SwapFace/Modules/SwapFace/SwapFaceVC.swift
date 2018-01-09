@@ -15,14 +15,13 @@ class SwapFaceVC: UIViewController {
   
   var presenter: SwapFacePresentation!
   var session: ARSession { return arSceneView.session }
+  let contentUpdater = VirtualContentUpdater()
   var nodeForContentType = [VirtualContentTypes: FaceMesh]()
   var selectedVirtualContent = VirtualContentTypes.faceGeometryMask {
     didSet {
       contentUpdater.virtualFaceNode = nodeForContentType[selectedVirtualContent]
     }
   }
-  
-  let contentUpdater = VirtualContentUpdater()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,12 +41,16 @@ class SwapFaceVC: UIViewController {
   func createFaceGeometry() {
     let device = arSceneView.device!
     let faceGeometry = ARSCNFaceGeometry(device: device)!
-    
     nodeForContentType = [VirtualContentTypes.faceGeometryMask: FaceMesh(geometry: faceGeometry)]
+    presenter.arSessionReady()
   }
 }
 
 extension SwapFaceVC: SwapFaceView {
+  func startArSession() {
+    contentUpdater.virtualFaceNode = nodeForContentType[selectedVirtualContent]
+  }
+  
   func prepareArSession() {
     arSceneView.delegate = contentUpdater
     arSceneView.session.delegate = self

@@ -12,6 +12,7 @@ protocol SwapFaceView: class {
   var presenter: SwapFacePresentation! { get set }
   
   func prepareArSession()
+  func startArSession()
   func pauseArSession()
   func resetArTracking()
 }
@@ -23,6 +24,8 @@ protocol SwapFacePresentation: BasePresenter {
   
   func didArSessionFail(error: Error)
   func didSessionInterruptionEnded()
+  
+  func arSessionReady()
 }
 
 protocol SwapFaceUsesCases: class {

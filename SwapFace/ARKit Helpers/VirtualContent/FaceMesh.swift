@@ -13,7 +13,7 @@ class FaceMesh: SCNNode {
   
   init (geometry: ARSCNFaceGeometry) {
     let material = geometry.firstMaterial!
-    material.diffuse.contents = UIColor.gray
+    material.diffuse.contents = UIColor.white
     material.lightingModel = .physicallyBased
     
     super.init()
