@@ -11,14 +11,4 @@ import SceneKit
 
 protocol VirtualFaceContent where Self: SCNNode {
   func update(withFaceAnchor anchor: ARFaceAnchor)
-  func loadContentFromAsset(resourceName: String) -> SCNNode
-}
-
-extension VirtualFaceContent {
-  func loadContentFromAsset(resourceName: String) -> SCNNode {
-    let url = Bundle.main.url(forResource: resourceName, withExtension: "scn", subdirectory: "Models.scnassets")!
-    let node = SCNReferenceNode(url: url)!
-    node.load()
-    return node
-  }
 }

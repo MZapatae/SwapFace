@@ -19,6 +19,8 @@
 		8E140E851FFC2D8F00C6F99E /* SwapFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140E841FFC2D8F00C6F99E /* SwapFaceVC.swift */; };
 		8E140E871FFC2DC200C6F99E /* SwapFaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E140E861FFC2DC200C6F99E /* SwapFaceView.xib */; };
 		8E140E8B1FFC2E2400C6F99E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140E8A1FFC2E2400C6F99E /* BasePresenter.swift */; };
+		8E63237620055280001B4322 /* AxisContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E63237520055280001B4322 /* AxisContent.swift */; };
+		8E6323B42006B756001B4322 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6323B32006B756001B4322 /* SCNNode.swift */; };
 		8E638B891FFD6C1D00E59D46 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E638B881FFD6C1D00E59D46 /* Models.scnassets */; };
 		8EE5BAA91FFFC1470021D392 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAA81FFFC1470021D392 /* AppConstants.swift */; };
 		8EE5BAAC1FFFC3960021D392 /* VirtualContentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */; };
@@ -43,6 +45,8 @@
 		8E140E841FFC2D8F00C6F99E /* SwapFaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapFaceVC.swift; sourceTree = "<group>"; };
 		8E140E861FFC2DC200C6F99E /* SwapFaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwapFaceView.xib; sourceTree = "<group>"; };
 		8E140E8A1FFC2E2400C6F99E /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		8E63237520055280001B4322 /* AxisContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisContent.swift; sourceTree = "<group>"; };
+		8E6323B32006B756001B4322 /* SCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
 		8E638B881FFD6C1D00E59D46 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 		8EE5BAA81FFFC1470021D392 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		8EE5BAAB1FFFC3960021D392 /* VirtualContentTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContentTypes.swift; sourceTree = "<group>"; };
@@ -108,8 +112,8 @@
 		8E140E771FFC290500C6F99E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8E638B881FFD6C1D00E59D46 /* Models.scnassets */,
 				8E140E6A1FFC23F700C6F99E /* Assets.xcassets */,
+				8E638B881FFD6C1D00E59D46 /* Models.scnassets */,
 				8E140E6C1FFC23F700C6F99E /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -153,6 +157,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8E6323B52006B760001B4322 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E6323B32006B756001B4322 /* SCNNode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8EE5BAAA1FFFC37B0021D392 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 		8EE5BAAF200012450021D392 /* ARKit Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8E6323B52006B760001B4322 /* Extensions */,
 				8EE5BAB420001F030021D392 /* VirtualContent */,
 				8EE5BAB520001F480021D392 /* VirtualContentUpdater.swift */,
 			);
@@ -175,6 +188,7 @@
 			children = (
 				8EE5BAB0200012C10021D392 /* VirtualFaceContent.swift */,
 				8EE5BAB2200013F10021D392 /* FaceMesh.swift */,
+				8E63237520055280001B4322 /* AxisContent.swift */,
 			);
 			path = VirtualContent;
 			sourceTree = "<group>";
@@ -332,7 +346,9 @@
 				8E140E7B1FFC2B2700C6F99E /* SwapFaceContract.swift in Sources */,
 				8EE5BAB1200012C10021D392 /* VirtualFaceContent.swift in Sources */,
 				8E140E811FFC2CED00C6F99E /* SwapFacePresenter.swift in Sources */,
+				8E63237620055280001B4322 /* AxisContent.swift in Sources */,
 				8EE5BAB620001F480021D392 /* VirtualContentUpdater.swift in Sources */,
+				8E6323B42006B756001B4322 /* SCNNode.swift in Sources */,
 				8E140E641FFC23F700C6F99E /* AppDelegate.swift in Sources */,
 				8E140E831FFC2D4900C6F99E /* SwapFaceRouter.swift in Sources */,
 				8E140E851FFC2D8F00C6F99E /* SwapFaceVC.swift in Sources */,

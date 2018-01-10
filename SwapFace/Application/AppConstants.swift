@@ -10,4 +10,5 @@ import Foundation
 
 enum AppConfig {
   static let showCoordinateOrigin = true
+  static let showArStatics = true
 }

@@ -16,7 +16,7 @@ class SwapFaceVC: UIViewController {
   var presenter: SwapFacePresentation!
   var session: ARSession { return arSceneView.session }
   let contentUpdater = VirtualContentUpdater()
-  var nodeForContentType = [VirtualContentTypes: FaceMesh]()
+  var nodeForContentType = [VirtualContentTypes: AxisContent]()
   var selectedVirtualContent = VirtualContentTypes.faceGeometryMask {
     didSet {
       contentUpdater.virtualFaceNode = nodeForContentType[selectedVirtualContent]
@@ -41,7 +41,7 @@ class SwapFaceVC: UIViewController {
   func createFaceGeometry() {
     let device = arSceneView.device!
     let faceGeometry = ARSCNFaceGeometry(device: device)!
-    nodeForContentType = [VirtualContentTypes.faceGeometryMask: FaceMesh(geometry: faceGeometry)]
+    nodeForContentType = [VirtualContentTypes.faceGeometryMask: AxisContent(geometry: faceGeometry)]
     presenter.arSessionReady()
   }
 }
@@ -52,9 +52,11 @@ extension SwapFaceVC: SwapFaceView {
   }
   
   func prepareArSession() {
+    arSceneView.showsStatistics = AppConfig.showArStatics
     arSceneView.delegate = contentUpdater
     arSceneView.session.delegate = self
     arSceneView.automaticallyUpdatesLighting = true
+    session.configuration?.isLightEstimationEnabled = true
     createFaceGeometry()
   }
   

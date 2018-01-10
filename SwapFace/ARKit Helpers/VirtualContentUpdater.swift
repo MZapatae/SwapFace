@@ -13,7 +13,7 @@ import Async
 class VirtualContentUpdater: NSObject {
   
   private var faceNode: SCNNode? //Content to show
-  var virtualFaceNode: FaceMesh? {
+  var virtualFaceNode: AxisContent? {
     didSet {
       setupFaceNodeContent()
     }
